@@ -14,4 +14,5 @@ The following guides illustrate how to use some features concretely:
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+* Para implantação com War (Extende a classe principal com SpringBootServletInitializer, sobrescreve o método configure da classe principal, adiciona o packaging no pom com o war e colocar a depencência no pom do tomcat com o scope provided)
 
