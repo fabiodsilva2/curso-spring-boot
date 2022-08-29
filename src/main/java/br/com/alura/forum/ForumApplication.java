@@ -10,17 +10,13 @@ import org.springframework.data.web.config.EnableSpringDataWebSupport;
 @SpringBootApplication
 @EnableSpringDataWebSupport//Para o Spring pegar as informações de paginação http://localhost:8080/topicos?page=0&size=10&sort=id,desc&sort=dataCriacao,asc
 @EnableCaching
-public class ForumApplication extends SpringBootServletInitializer {
+public class ForumApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ForumApplication.class, args);
 	}
 	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		
-		return builder.sources(ForumApplication.class);
-	}
+	
 	
 
 }

@@ -16,3 +16,6 @@ The following guides illustrate how to use some features concretely:
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 * Para implantação com War (Extende a classe principal com SpringBootServletInitializer, sobrescreve o método configure da classe principal, adiciona o packaging no pom com o war e colocar a depencência no pom do tomcat com o scope provided)
 
+Comando para executar o docker com os parâmetros:
+docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE='prod' -e FORUM_DATABASE_URL='jdbc:h2:mem:alura-forum' -e FORUM_DATABASE_USERNAME='sa' -e FORUM_DATABASE_PASSWORD='' -e FORUM_JWT_SECRET='123456' alura/forum
+
